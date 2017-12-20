@@ -1,0 +1,19 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color:#fff;
+}
+/*.router-link-active{
+	color:#ff0;
+}*/
+.router-link-exact-active{
+	color:#f00 !important;
+	text-decoration: none !important;
+}
+ul{
+	list-style: none;
+	
+}
