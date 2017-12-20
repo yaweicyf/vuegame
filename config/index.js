@@ -4,6 +4,9 @@
 
 const path = require('path')
 
+
+console.log("zhouzhe.log");
+
 module.exports = {
   dev: {
 
