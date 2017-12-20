@@ -19,7 +19,7 @@ module.exports = {
     errorOverlay: true,
     notifyOnErrors: true,
 
-    imageDomain: 'http://127.0.0.1/game/',
+    imageDomain: 'http://http://zyawei.sc2yun.com/game/',
 
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
@@ -79,7 +79,7 @@ module.exports = {
     productionGzip: false,
     productionGzipExtensions: ['js', 'css'],
 
-    imageDomain: 'http://127.0.0.1/game/',
+    imageDomain: 'http://zyawei.sc2yun.com/game/',
 
     // Run the build command with an extra argument to
     // View the bundle analyzer report after build finishes:
