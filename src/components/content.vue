@@ -21,7 +21,6 @@
 		font-size:19px;
 		color:#fff;
 	}
-
 </style>
 
 <script>

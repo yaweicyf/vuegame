@@ -82,7 +82,7 @@
 		mounted() {
 			var app = this;
 			new Promise(function(success, error){
-				var url = this.apiDomain();
+				var url = app.apiDomain();
 				$.get( url + "vue.php").then(function(list){
 					if(list) {
 						success(list);

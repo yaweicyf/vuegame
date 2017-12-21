@@ -79,10 +79,10 @@
 				this.$router.push('/Detail/'+id);
 			}
 		},
-		mounted() {
+		mounted: function() {
 			var app = this;
 			new Promise(function(success, error){
-				var url = this.apiDomain();
+				var url = app.apiDomain();
 				$.get(url + "vue.php?type=1").then(function(list){
 					if(list) {
 						success(list);
