@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<headerx></headerx>
-    <Slider></Slider>
-    <List></List>
+		<Slider></Slider>
+		<List></List>
 	</div>
 </template>
 
@@ -12,7 +12,7 @@ import Headerx from './header';
 import Slider from './slider';
 import List from './list';
 export default {
-	components:{ Headerx, Slider,List},
+	components:{ Headerx, Slider, List},
   	name: 'Index',
   	data () {
     	return {

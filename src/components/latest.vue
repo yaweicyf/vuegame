@@ -71,7 +71,7 @@
 		data: function() {
 			return {
 				newsList: [],
-				imageDomain: 'http://127.0.0.1/game/',
+				imageDomain: this.apiDomain(),
 			};
 		},
 		methods: {
@@ -82,7 +82,8 @@
 		mounted() {
 			var app = this;
 			new Promise(function(success, error){
-				$.get("http://127.0.0.1/game/vue.php").then(function(list){
+				var url = this.apiDomain();
+				$.get( url + "vue.php").then(function(list){
 					if(list) {
 						success(list);
 					} else {

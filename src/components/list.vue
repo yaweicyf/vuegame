@@ -70,11 +70,12 @@
 		data:function(){
 			return{
 				list:[],
-				imageDomain:"http://127.0.0.1/game/"
+				imageDomain:this.apiDomain(),
 			};
 		},
 		mounted:function(){
-			$.get("http://127.0.0.1/game/slider.php?type=12",(data)=>{
+			var url = this.apiDomain();
+			$.get( url + "slider.php?type=12",(data)=>{
 				this.list=data;
 			});
 		}

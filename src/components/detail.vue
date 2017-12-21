@@ -15,7 +15,9 @@
 	  	},
 	  	mounted:function(){
 	  		var index=this.$route.params.i;
-	  		$.get("http://127.0.0.1/game/detail.php?id="+index,(data)=>{
+			var url = this.apiDomain();
+			
+	  		$.get(url + "detail.php?id="+index,(data)=>{
 	  			this.detail=data;
 	  		});
 	  	}
