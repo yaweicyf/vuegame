@@ -44,6 +44,7 @@ exports.cssLoaders = function (options) {
 
     // Extract CSS when that option is specified
     // (which is the case during production build)
+	// 测试环境改为生产环境 返回extractTextPlugin 不同
     if (options.extract) {
 	  return ['vue-style-loader'].concat(loaders)
 	  /**
