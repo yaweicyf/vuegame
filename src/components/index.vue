@@ -23,7 +23,7 @@ export default {
   		
   	},
   	mounted:function(){
-  			console.log('ssd');
-  		}
+		
+	}
 }
 </script>

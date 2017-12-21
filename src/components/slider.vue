@@ -85,8 +85,7 @@ export default {
     data:function(){
       return {
         slider:[],
-        imageDomain:"http://127.0.0.1/game/",
-
+        imageDomain: this.apiDomain(),
       };
     },
 
@@ -98,6 +97,8 @@ export default {
 
     mounted:function() {
       var carousel=this;
+	  var apiDomain = this.apiDomain();
+	  
       (function() {
         var i = 0;
         $('#slider li').eq(0).addClass('outside');
@@ -116,7 +117,8 @@ export default {
       }());
 
       //slider数据
-      $.get("http://127.0.0.1/game/slider.php",function (data){
+      $.get(apiDomain + "slider.php",function (data){
+		console.log(apiDomain + "slider.php");
         data.map(function(v, k) {
             data[k].linkid = v.link.split('=')[1];
         })
