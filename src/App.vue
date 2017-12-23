@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
+    <bottom></bottom>
     <Con></Con>
   </div>
 </template>
@@ -17,8 +18,9 @@
 <script>
 
 import Con from './components/content';
+import Bottom from './components/bottom';
 export default {
-  components:{Con},
+  components:{Con, Bottom},
   name: 'app'
 }
 </script>

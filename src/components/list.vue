@@ -1,11 +1,11 @@
 <template>
 	<ul>
 		<li v-for="tmp in list">
-			<div class="row list">
+			<div class="row list" @click="jumpToDetail(1)">
 				<div class="col-xs-3 pic-con-list">
 					<img :src="imageDomain+tmp.picurl"/>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-6 text-left">
 					<h3>{{tmp.title}}</h3>
 					<p>{{tmp.content}}</p>
 				</div>
@@ -36,7 +36,7 @@
 	}
 	.list h3{
 		height:25px;
-		line-height:20px;
+		line-height:25px;
 		overflow:hidden;
 		font-size:14px;
 		margin:0;
@@ -77,7 +77,14 @@
 			var url = this.apiDomain();
 			$.get( url + "slider.php?type=12",(data)=>{
 				this.list=data;
+
 			});
+
+		},
+		methods:{
+			jumpToDetail:function(id){
+				this.$router.push("/Detail/"+id);
+			}
 		}
 	}
 </script>

@@ -83,7 +83,7 @@
 			var app = this;
 			new Promise(function(success, error){
 				var url = app.apiDomain();
-				$.get( url + "vue.php").then(function(list){
+				$.get( url + "vue.php?type=1").then(function(list){
 					if(list) {
 						success(list);
 					} else {
