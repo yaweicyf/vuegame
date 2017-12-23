@@ -2,7 +2,7 @@
 	<div>
 		<div class="col-xs-12">{{detail.title}}</div>
 		<div class="col-xs-12">{{detail.content}}</div>
-	</div>
+	</div> 
 </template>	
 
 <script>
